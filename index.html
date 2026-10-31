@@ -79,7 +79,9 @@
     var hatY=-1000
 
     var videoon=false
-    function start(){started=true; document.documentElement.requestFullscreen(); startsc.remove(); startbutt.remove(); }
+    function start(){HappyBday_song.play();
+HappyBday_song.pause();
+HappyBday_song.currentTime = 0;;started=true; document.documentElement.requestFullscreen(); startsc.remove(); startbutt.remove(); }
 
 
     startbutt.onclick=start
