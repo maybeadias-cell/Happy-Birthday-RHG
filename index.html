@@ -109,9 +109,9 @@ HappyBday_song.currentTime = 0;;started=true; document.documentElement.requestFu
 
         if (dropcam && camY<300){camY+=5; cam.style.top=camY+"px";}
 
-        if (phototaken && hatY<-30){hatY+=5; hat.style.top=hatY+"px"; capthere=true}
+        if (phototaken && hatY<20){hatY+=5; hat.style.top=hatY+"px"; capthere=true}
 
-        if (capthere && textY>1350){textY-=5; bdt.style.top=textY+"px"; textreached=true}
+        if (capthere && textY>700){textY-=5; bdt.style.top=textY+"px"; textreached=true}
 
         if (!singing && textreached){HappyBday_song.play(); singing=true}
         
