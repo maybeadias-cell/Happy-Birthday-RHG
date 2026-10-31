@@ -54,7 +54,7 @@
     let hat=document.getElementById("hat")
     let bdt=document.getElementById("bday_text")
 
-    let HappyBday=new Audio("https://files.catbox.moe/wtbql9.mp3");
+    let HappyBday_song=new Audio("https://files.catbox.moe/wtbql9.mp3");
     let cute_meow=new Audio("https://files.catbox.moe/5nmsv9.mp3");
     let deep_meow=new Audio("https://files.catbox.moe/aa07d5.mp3");
     let shutter_sound=new Audio("https://files.catbox.moe/yn2otg.mp3");
@@ -111,7 +111,7 @@
 
         if (capthere && textY>1350){textY-=5; bdt.style.top=textY+"px"; textreached=true}
 
-        if (!singing && textreached){HappyBday.play(); singing=true}
+        if (!singing && textreached){HappyBday_song.play(); singing=true}
         
         setTimeout(update,16)
     }
